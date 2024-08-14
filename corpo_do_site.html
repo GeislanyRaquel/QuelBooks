@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>QuelBooks</title>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuelBooks</title>
+  <style>
+    
+   body{
+     background-color: #acd0ff;
+   }
+    header {
+      background-color: rgb(0,0,128);
+      color: white;
+      padding: 1em;
+      text-align: center;
+
+
+      
+    }
+
+    .Titulo{
+        background-color: rgb(0,0,128);
+      color: white;
+      
+      text-align-last: left;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .carrosselcorpo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .carousel {
+    width: 100%; 
+  }
+
+  .carousel-item {
+    text-align: center;
+  }
+
+  .carousel-item img {
+    max-width: 120%; 
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  }
+
+  .carousel h5, .carousel p {
+    color: #fafafa;
+  }
+
+  .achados-magicos {
+    filter: sepia(80%);
+}
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: #00a2ff; 
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    color: #fff; 
+  }
+
+  .carousel-control-prev:hover,
+  .carousel-control-next:hover {
+    color: #fff; 
+  }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      background-color: #eee;
+      padding: 1em;
+    }
+
+    section {
+      padding: 2em;
+    }
+
+    .book {
+      border: 1px solid rgb(80, 106, 255);
+      padding: 1em;
+      margin: 1em;
+      text-align: center;
+    }
+
+    footer {
+      background-color: rgb(0,0,128);
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    nav{
+      align-items: baseline;
+    }
+
+
+    h2{
+      text-align: center;
+      justify-items: center;
+      padding: 2em;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      color: rgb(0,0,128);
+
+    }
+
+   .card{
+    
+      flex: 0 0 calc(20% - 40px); 
+      margin: 10px;
+      width: 18rem;
+      height: 56rem;
+      margin-left: auto;
+      margin-right: auto;
+
+   }
+
+   .filter-section {
+     
+            margin-bottom: 20px;
+            text-align: center;
+            justify-items: center;
+        }
+  
+
+  </style>
+</head>
+
+<body>
+  <script src="path/to/dist/feather.js"></script>
+  
+
+  <header class="Titulo">
+    <h1><svg xmlns="http://www.w3.org/2000/svg" width="100px" height="100px" fill="currentColor" class="bi bi-book-half" viewBox="0 0 16 16">
+      <path d="M8.5 2.687c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"/>
+    </svg>QuelBooks</h1><nav class="navbar navbar-expand-lg bg-body-tertiary">
+      
+  </header>
+ 
+  
+
+  <nav>
+    <a href="romance/livrosromance/romance.html">Romance</a>
+    <a href="Ficcao Cientifica/ficcao.html">Ficção Científica</a>
+    <a href="literatura Nacional/literaturaN.html">Literatura Nacional</a>
+    <a href="Mangá/manga.html">Mangás</a>
+    <a href="drama/drama.html">Drama</a>
+    <a href="corpocarrinho.html"><svg xmlns="http://www.w3.org/2000/svg" width="35px" height="35px" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16" >
+      <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/> 
+    </svg></i></a>
+    <a href="corpoconta.html"><svg xmlns="http://www.w3.org/2000/svg" width="35px" height="35px" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+      <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+    </svg></a>
+  </nav>
+  <header class="carrosselcorpo">
+
+    <div id="carouselExampleInterval" class="carousel slide" style="margin-left: 50px; justify-content: center;" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item " data-bs-interval="1900">
+          <img src="https://cdn.culturagenial.com/imagens/vermelho-branco-e-sangue-azul-livro-cke.jpg " class="img-fluid" class="carrossel"  style="width: 200px;"  alt="Vermelho_Branco_e_Sangue_Azul" >
+          <a href="livrosromance/Vermelhosangue.html"></a>
+            <h5>Vermelho Branco e Sangue Azul</h5>
+            <p>53,90</p>
+        </div>
+        <div class="carousel-item" data-bs-interval="1900">
+          <img src="https://m.media-amazon.com/images/I/61nMg7xGQTL._SY466_.jpg" class="carrossel" class="d-block w-30" style="width: 200px; "  alt="Box Demon Slayer Vols. 1 ao 23">
+          <h5>Box Demon Slayer Vols. 1 ao 23</h5>
+          <p>554,00</p>
+
+        </div>
+        <div class="carousel-item" data-bs-interval="1900">
+            <img src="https://m.media-amazon.com/images/I/A1UjcPz4gZL._SY466_.jpg" class="carrossel" class="d-block w-30" style="width: 200px; "alt="Parcy Jackson">
+            <h5>Parcy Jackson O Ladrão de Raios</h5>
+          <p>90,00</p>
+        </div>
+
+          <div class="carousel-item active" data-bs-interval="1900">
+            <img src="https://m.media-amazon.com/images/I/81O3WbIbKNL._SY466_.jpg" class="carrossel" class="d-block w-30" style="width: 200px; " alt="Voce ligou para Sam">
+            <h5>Você ligou para o Sam</h5>
+          <p>38,42</p>
+          </div>
+          <div class="carousel-item" data-bs-interval="1900">
+            <img src="https://m.media-amazon.com/images/I/81d38tMTdFL._SY466_.jpg" class="carrossel" class="d-block w-30" style="width: 200px; " alt="...">
+            <h5>Chove sobre minha infância</h5>
+          <p>47,92</p>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      
+    </div>
+  </header>
+
+     <h2>Achados Mágicos </h2> 
+     <div class="row">
+      <div class="col-4">
+        <div class="card" style="width: 18rem;">
+          <img src="https://m.media-amazon.com/images/I/41897yAI4LL._SY445_SX342_.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Harry Potter e a pedra Filosofal</h5>
+            <p class="card-text">
+              <p>R$ 49,90</p>
+              <p class="descricao-livro">Harry Potter é um bruxo e tem uma vaga na ESCOLA DE MAGIA E BRUXARIA DE HOGWARTS. Uma aventura înacreditável está para começar!</p></p>
+            <a href="#" class="btn btn-primary">Saiba mais</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card" style="width: 18rem;">
+          <img src="https://m.media-amazon.com/images/I/81jbivNEVML._SY466_.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Harry Potter e a Câmara Secreta: 2</h5>
+            <p class="card-text">
+              <p>R$ 55,17</p>
+              <p class="descricao-livro">São encontrados alunos que parecem ter se transformado em pedra... as SINISTRAS previsões de Dobby parecem se CONCRETIZAR.</p>
+            <a href="#" class="btn btn-primary">Saiba mais</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card" style="width: 18rem;">
+          <img src="https://m.media-amazon.com/images/I/81u+ljPVifL._SY466_.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Harry Potter e o Prisioneiro de Azkaban: 3</h5>
+            <p class="card-text">
+              <p>R$ 52,17</p>
+              <p class="descricao-livro">Sirius Black, genocida FORAGIDO e seguidor de LORDE VOLDEMORT, está à SOLTA e dizem que vem atrás de Harry. </p>
+            <a href="#" class="btn btn-primary">Saiba mais</a>
+          </div>
+        </div>
+      </div>
+     </div>
+     <div class="row">
+      <div class="col-4"> 
+        <div class="card" style="width: 18rem;">
+        <img src="https://m.media-amazon.com/images/I/81nTLN-kz7L._SY466_.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Harry Potter e o Cálice de Fogo: 4</h5>
+          <p class="card-text">
+            <p>R$ 52,17</p>
+             <p class="descricao-livro">E então, no Dia das Bruxas, quando o Cálice de Fogo faz sua seleção, Harry fica ADMIRADO no encontrar seu nome em um daqueles escolhidos pelo calice MÁGICO.</p>
+          <a href="#" class="btn btn-primary">Saiba mais</a>
+        </div>
+      </div></div>
+      <div class="col-4"> <div class="card" style="width: 18rem;">
+        <img src="https://m.media-amazon.com/images/I/81d6ESyPZwL._SY466_.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Harry Potter e a Ordem da Fênix: 5</h5>
+          <p class="card-text">
+            <p>R$ 82,17</p>
+            <p class="descricao-livro">Harry deve deixar que o professor Snape lhe ensine & PROTEGER sua mente dos ataques violentos de Voldemort. Porém, eles estão ficando MAIS FORTES a cada dia e o tempo de Harry vai se esgotando... </p>
+          <a href="#" class="btn btn-primary">Saiba mais</a>
+        </div>
+      </div></div>
+      <div class="col-4"><div class="card" style="width: 18rem;">
+        <img src="https://m.media-amazon.com/images/I/51msVf94L2L._SY445_SX342_.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Harry Potter e o Enigma do Príncipe: 6 </h5>
+          <p class="card-text">
+            <p>R$ 77,17</p>
+             <p class="descricao-livro">Harry é convencido de que Malfoy traz a MARCA NEGRA: há um Comensal da Morte entre eles. </p>
+          <a href="#" class="btn btn-primary">Saiba mais</a>
+        </div>
+      </div></div>
+     </div>
+     <div class="row">
+      <div class="col-4"><div class="card" style="width: 18rem;">
+        <img src="https://m.media-amazon.com/images/I/51PoQ61oq-L._SY445_SX342_.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Harry Potter e as Relíquias da Morte: 7</h5>
+          <p class="card-text">
+            <p>R$ 82,17</p>
+             <p class="descricao-livro">A BATALHA final deve começar - Harry deve resistir e enfrentar seu inimigo... </p>
+          <a href="#" class="btn btn-primary">Saiba mais</a>
+        </div>
+      </div></div>
+      <div class="col-4"><div class="card" style="width: 18rem;">
+        <img src="https://m.media-amazon.com/images/I/A1KCc5VBFYL._SY466_.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Harry Potter e a criança amaldiçoada - Parte um e dois</h5>
+          <p class="card-text">
+            <p>R$ 49,17</p>
+             <p class="descricao-livro">A OITAVA HISTORIA. DEZENOVE ANOS DEPOIS... </p>
+          <a href="#" class="btn btn-primary">Saiba mais</a>
+        </div></div>
+      
+     </div>
+    
+    <section id="tesouros-da-literatura">
+      <h2>Tesouros da Literatura</h2>
+  
+      <div class="row">
+        <div class="col-4">
+          <div class="card" style="width: 18rem;">
+              <img src="https://m.media-amazon.com/images/I/71FpfkjJUSL._SY466_.jpg" class="card-img-top" alt="O Pequeno Príncipe">
+              <div class="card-body">
+                  <h5 class="card-title">O Pequeno Príncipe</h5>
+                  <p class="card-text">
+                      <p>R$ 19,90</p>
+                      <p class="descricao-livro">O Pequeno Príncipe é uma obra do escritor francês Antoine de Saint-Exupéry. O livro conta a história do Pequeno Príncipe, um príncipe que viaja por vários planetas, incluindo a Terra, e faz observações filosóficas sobre a natureza humana.</p>
+                  </p>
+                  <a href="#" class="btn btn-primary">Saiba mais</a>
+              </div>
+          </div>
+      </div>
+      
+      <div class="col-4">
+        <div class="card" style="width: 18rem;">
+            <img src="https://m.media-amazon.com/images/I/51XULadddlL.jpg" class="card-img-top" alt="Dom Quixote">
+            <div class="card-body">
+                <h5 class="card-title">Dom Quixote</h5>
+                <p class="card-text">
+                    <p>R$ 65,00</p>
+                    <p class="descricao-livro">Dom Quixote é uma obra-prima da literatura escrita por Miguel de Cervantes. A história narra as aventuras de um nobre chamado Dom Quixote que enlouquece depois de ler muitos romances de cavalaria e decide se tornar um cavaleiro andante.</p>
+                </p>
+                <a href="#" class="btn btn-primary">Saiba mais</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-4">
+      <div class="card" style="width: 18rem;">
+          <img src="https://m.media-amazon.com/images/I/61N4u6ijSeL._SY466_.jpg" class="card-img-top" alt="Senhor dos Anéis">
+          <div class="card-body">
+              <h5 class="card-title">O Senhor dos Aneis - Edição de Colecionador com Ilustrações de Alan Lee</h5>
+              <p class="card-text">
+                  <p>R$ 299,90</p>
+                  <p class="descricao-livro">Senhor dos Anéis é uma trilogia épica escrita por J.R.R. Tolkien. A história se passa em um mundo fictício chamado Terra-média e segue as aventuras de um hobbit chamado Frodo Bolsão, que embarca em uma jornada para destruir um poderoso anel e salvar o mundo do domínio do mal.</p>
+              </p>
+              <a href="#" class="btn btn-primary">Saiba mais</a>
+          </div>
+      </div>
+    </div>
+       </div>
+       <div class="row">
+       <div class="col-4">
+        <div class="card" style="width: 18rem;">
+            <img src="https://m.media-amazon.com/images/I/515cVYLIP9L._SY445_SX342_.jpg" class="card-img-top" alt="Cem Anos de Solidão">
+            <div class="card-body">
+                <h5 class="card-title">Cem Anos de Solidão</h5>
+                <p class="card-text">
+                    <p>R$ 49,90</p>
+                    <p class="descricao-livro">Cem Anos de Solidão é uma obra-prima do autor colombiano Gabriel García Márquez. O livro narra a história da família Buendía ao longo de várias gerações em Macondo, uma cidade fictícia na América Latina. A narrativa incorpora elementos de realismo mágico e explora temas complexos como amor, solidão, política e mitologia.</p>
+                </p>
+                <a href="#" class="btn btn-primary">Saiba mais</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col-4">
+      <div class="card" style="width: 18rem;">
+          <img src="https://m.media-amazon.com/images/I/81+UYddlEeL._SY466_.jpg" class="card-img-top" alt="Alice no País das Maravilhas">
+          <div class="card-body">
+              <h5 class="card-title">Alice no País das Maravilhas</h5>
+              <p class="card-text">
+                  <p>R$ 59,99</p>
+                  <p class="descricao-livro">Alice no País das Maravilhas é uma obra clássica da literatura escrita por Lewis Carroll. A história segue a jornada de Alice, uma jovem curiosa que cai em uma toca de coelho e entra em um mundo fantástico povoado por personagens peculiares, como o Chapeleiro Maluco, o Gato de Cheshire e a Rainha de Copas. Uma narrativa repleta de aventura, imaginação e nonsense.</p>
+              </p>
+              <a href="#" class="btn btn-primary">Saiba mais</a>
+          </div>
+      </div>
+  </div>
+  
+  <div class="col-4">
+    <div class="card" style="width: 18rem;">
+        <img src="https://m.media-amazon.com/images/I/51feD87yuEL._SY445_SX342_.jpg" class="card-img-top" alt="1984">
+        <div class="card-body">
+            <h5 class="card-title">1984</h5>
+            <p class="card-text">
+                <p>R$ 32,50</p>
+                <p class="descricao-livro">1984 é uma obra distópica escrita por George Orwell. A história se passa em um regime totalitário, onde a vida de cada cidadão é controlada pelo Grande Irmão. O livro explora temas como vigilância, manipulação da verdade e resistência individual em um mundo opressivo. Uma narrativa que continua relevante e impactante.</p>
+            </p>
+            <a href="#" class="btn btn-primary">Saiba mais</a>
+        </div>
+    </div>
+</div>
+<div class="row">
+<div class="col-4">
+  <div class="card" style="width: 18rem;">
+      <img src="https://m.media-amazon.com/images/I/41uwAvdzIzL._SY445_SX342_.jpg" class="card-img-top" alt="O Diário de Anne Frank">
+      <div class="card-body">
+          <h5 class="card-title">O Diário de Anne Frank</h5>
+          <p class="card-text">
+              <p>R$ 35,90</p>
+              <p class="descricao-livro">O Diário de Anne Frank é um testemunho tocante de uma adolescente judia durante a Segunda Guerra Mundial. Anne Frank registra em seu diário os desafios, medos e esperanças enquanto se esconde com sua família da perseguição nazista. Um relato impactante que oferece uma visão única e humana do Holocausto.</p>
+          </p>
+          <a href="#" class="btn btn-primary">Saiba mais</a>
+      </div>
+  </div>
+</div>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+
+
+
+
+<div class="col-4">
+  <div class="card" style="width: 18rem;">
+      <img src="https://m.media-amazon.com/images/I/51cF7jnQGBS._SY445_SX342_.jpg" class="card-img-top" alt="O Alquimista">
+      <div class="card-body">
+          <h5 class="card-title">O Alquimista</h5>
+          <p class="card-text">
+              <p>R$ 37,50</p>
+              <p class="descricao-livro">O Alquimista, escrito por Paulo Coelho, é um livro que narra a jornada de Santiago, um jovem pastor andaluz, em busca de seus sonhos. A história é repleta de simbolismos e lições de vida, explorando temas como destino, realização pessoal e a importância de seguir os próprios sonhos.</p>
+          </p>
+          <a href="#" class="btn btn-primary">Saiba mais</a>
+      </div>
+  </div>
+</div>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+
+
+
+    </section>
+    <div class="container">
+      <div class="row">
+          <!-- Barra de Filtros -->
+          <div class="col-md-3">
+              <div class="filter-section">
+                  <h5>Seção</h5>
+                  <select class="form-control">
+                      <option>Todas as Seções</option>
+                      <option>Romance</option>
+                      <option>Ficção Científica</option>
+                      <option>Mangá</option>
+                      <option>Literatura Nacional</option>
+                      <option>Drama</option>
+                      <option>Achados Mágícos</option>
+                      <option>Tesouros da Literatura</option>
+                      <!-- Adicione mais opções conforme necessário -->
+                  </select>
+              </div>
+  
+              <div class="filter-section">
+                  <h5>Preço</h5>
+                  <input type="range" class="form-range" min="0" max="100" step="1">
+              </div>
+  
+              <div class="filter-section">
+                  <h5>Gênero</h5>
+                  <select class="form-control">
+                      <option>Todos os Gêneros</option>
+                      <option>Romance</option>
+                      <option>Ficção Científica</option>
+                      <option>Mangá</option>
+                      <option>Literatura Nacional</option>
+                      <option>Drama</option>
+                  </select>
+              </div>
+  
+              <button class="btn btn-primary">Aplicar Filtros</button>
+          </div>
+  
+         
+  </div>
+  <br><br><br><br><br>
+  <br><br><br><br>
+  <br><br><br><br><br><br>
+  <br><br><br><br>
+  <br><br><br><br><br><br>
+  <br><br><br><br>
+  <br><br><br><br><br><br>
+  <br><br><br><br>
+  <br><br>
+
+  
+ 
+
+<footer>
+  <p>&copy; 2023 QuelBooks</p>
+  <div class="icons-container">
+      <!-- Ícone do WhatsApp -->
+      <a href="https://wa.me/seu_numero_telefone" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+              class="bi bi-whatsapp" viewBox="0 0 16 16">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"></path>
+              </svg>
+      </a>
+
+      <!-- Ícone do Instagram -->
+      <a href="https://www.instagram.com/seu_usuario_instagram" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+              class="bi bi-instagram" viewBox="0 0 16 16">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+              </svg>
+      </a>
+
+      <!-- Ícone de e-mail -->
+      <a href="mailto:QuelBooks@gmail.com" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+              class="bi bi-envelope" viewBox="0 0 16 16">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+              </svg>
+      </a>
+  </div>
+</footer>
+
+</body>
+
+</html>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
