@@ -1,6 +1,52 @@
 {
   "produts":[
-    { "id": 1, "title": "a culpa é das estrelas", "src": "", "description": "", "price": "R$ 70,00"}
+    { 
+      "id": 1, 
+      "title": "Harry Potter e o Prisioneiro de Azkaban: 3", 
+      "src": "https://m.media-amazon.com/images/I/81u+ljPVifL._SY466_.jpg", 
+      "description": "Sirius Black, genocida FORAGIDO e seguidor de LORDE VOLDEMORT, está à SOLTA e dizem que vem atrás de Harry. ", 
+      "price": 70.00,
+      "author": "J.K Rowling"
+    },
+    { 
+      "id": 2, 
+      "title": "Harry Potter e o Cálice de Fogo: 4", 
+      "src": "https://m.media-amazon.com/images/I/81nTLN-kz7L._SY466_.jpg", 
+      "description": "E então, no Dia das Bruxas, quando o Cálice de Fogo faz sua seleção, Harry fica ADMIRADO no encontrar seu nome em um daqueles escolhidos pelo calice MÁGICO.", 
+      "price": 52.17,
+      "author": "J.K Rowling"
+    },
+    { 
+      "id": 3, 
+      "title": "Harry Potter e a Ordem da Fênix: 5", 
+      "src": "https://m.media-amazon.com/images/I/81d6ESyPZwL._SY466_.jpg", 
+      "description": "Harry deve deixar que o professor Snape lhe ensine & PROTEGER sua mente dos ataques violentos de Voldemort. Porém, eles estão ficando MAIS FORTES a cada dia e o tempo de Harry vai se esgotando... ", 
+      "price": 82.17,
+      "author": "J.K Rowling"
+    },
+    { 
+      "id": 4, 
+      "title": "Harry Potter e o Enigma do Príncipe: 6", 
+      "src": "https://m.media-amazon.com/images/I/51msVf94L2L._SY445_SX342_.jpg", 
+      "description": "Harry é convencido de que Malfoy traz a MARCA NEGRA: há um Comensal da Morte entre eles. ", 
+      "price": 77.17,
+      "author": "J.K Rowling"
+    },
+    { 
+      "id": 5, 
+      "title": "Harry Potter e as Relíquias da Morte: 7", 
+      "src": "https://m.media-amazon.com/images/I/51PoQ61oq-L._SY445_SX342_.jpg", 
+      "description": "Sirius Black, genocida FORAGIDO e seguidor de LORDE VOLDEMORT, está à SOLTA e dizem que vem atrás de Harry.A BATALHA final deve começar - Harry deve resistir e enfrentar seu inimigo... ", 
+      "price": 82.17,
+      "author": "J.K Rowling"
+    },
+    { 
+      "id": 6, 
+      "title": "Harry Potter e a criança amaldiçoada - Parte um e dois", 
+      "src": "https://m.media-amazon.com/images/I/A1KCc5VBFYL._SY466_.jpg", 
+      "description": ">A OITAVA HISTORIA. DEZENOVE ANOS DEPOIS...", 
+      "price": 47.90,
+      "author": "J.K Rowling"
+    }
   ]
-
-  }    
+}    
